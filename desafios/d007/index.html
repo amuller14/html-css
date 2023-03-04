@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+
+<body>
+
+    <h1>Temos aqui uma imagem que altera seu tamanho</h1>
+
+    <body style="padding: 05%;">
+        <h2>Corgi Vector</h2>
+
+        <picture>
+
+            <source media="(max-width: 620px)" srcset="img/img_P.jpeg" type="image/jpeg">
+            <source media="(max-width: 1020px)" srcset="img/img_M.jpeg" type="image/jpeg">
+            <img src="img/img_G.jpeg" alt="imagem váriavel">
+
+        </picture>
+
+        <p>Aqui carregaremos um audio MP3 para testes</p>
+
+        <!-- formatos MP3 ou MPEG, WAV e OGG desta forma pode não funcionar
+            indicado não usar o codigo abaixo.
+
+            <audio src="midias/happy-mistake.mp3" controls></audio>
+        -->
+        <audio controls autoplay preload="metadata"> <!-- preload nunca usar o auto-->
+
+            <source src="midias/happy-mistake.mp3" type="audio/mpeg">
+
+        </audio>
+
+    </body>
+
+</html>
